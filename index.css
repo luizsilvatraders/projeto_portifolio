@@ -1,0 +1,321 @@
+/*importar fonte no google fontes */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,300;0,400;1,300;1,400;1,500;1,600&family=Inter:wght@100;400;500;600&family=Poppins:wght@600&family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,700;1,900&display=swap');
+
+
+
+/* geral -reset -tirar as coisas que css não vai precisar */
+body, p, h1, h2, input, textarea{
+    margin: : 0;
+}
+
+body{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+h2 {
+    font-size: 30px;
+}
+
+/* estilizar carra de navegação (nav)*/
+#navbar {
+    background-color: rgb(30, 30, 128);/* cor azul*/
+    color: whitesmoke; /*cor das letras */
+    padding: 0 15px; /*dar um espaço na lateral da barra de navegação*/
+    height: 60px; /*altura da faixa da barra de navegação 60px */
+}
+
+#navbar h2, #navbar ul, #navbar-list li, #navbar nav {/*puxei todos items de dentro do hearder(navbar) para ajustalos em ordem*/
+    display: inline-block; /*esse comando deixa todos elementos um do lado do outro,todos os links vão ficar en seguencia*/
+}
+
+#navbar h2 {
+    margin: 0;/* não vai ter a magem que fica em volta  */
+    line-height: 60px; /* mesma altura da navbar para centralizar nela */
+    margin-left: 55px;/* esse comando vai desviar do logo 55px*/
+}
+
+#navbar img {
+    height: 40px; /* comando de altura para imagem height 40px */
+    transform: rotate(45deg);/* comando para girar a imagem em 45 graus*/
+    position:absolute;/* comando para deixar o elemento onde eu quiser */
+    top: 10px; /*comando para criar um espaço na parte de cima da imagem */
+}
+#navbar nav{
+    float: right;
+}
+
+    /*vou ajustar a lista ul*/
+#navbar ul{
+    float: right;/* esse comando vai deixa a lista no canto superior direito da tela */
+}
+#navbar ul{
+margin-top: 22px
+} 
+
+#navbar li {
+    margin: 0 10px;/*primeiro zero serve para margem superior e inferior e o 10px para esçamento lateral*/
+}
+
+#navbar-list li a { /*vou ajustar o link as palavras*/
+    text-decoration: none;/*comando para tirar aquele grifado das palasvras da lista ____________ */
+    color: whitesmoke;
+}
+
+#navbar-list li a:hover{ /*aqui estou puxando todos os items da lista li e os link a */
+border-bottom: 1.5px solid whitesmoke; /* comando cria um grifamento abaixo da palavra quando passa com o mause */
+cursor: pointer
+}
+
+/*vou estilizar baner e a imagem central do banner */
+
+#main-banner {/*puxei o main + baner */
+    height: 70vh;/*70 view height-vai significar 70% da altura da tela */
+    background-image: url('./img/bg-projeto.jpg');/*comando para colocar uma imagem de fundo como capa*/
+
+
+    background-size: cover;/*comando para ajustar a imagem de capa com tamanho que aproveite todo espaço */
+
+    padding-top: 15vh;/*para ajustar o conteudo um pouco pra baixo (passing-top:15vh*/
+}
+
+/*agora vou ajustar os conteudos de dentro do banner texto paragrafos e nome*/
+#banner-info  {
+    width: 40%; /*comando de largura do banner 40% e os conteudos tbm */
+    margin-right: auto;/*comando para centralizar conteudo de dentro do banner e da DIV -banner-info*/
+    margin-left: auto; /*comando para centralizar conteudo dentro da div - banner=-info*/
+    text-align: center; /*comando para centralizar todo texto h1,h2,h3 ou p de dentro da div#banner-info*/
+    color:whitesmoke; /*todo texto  dentro da div#banner-info vai ter essa cor */
+    padding: 50px;
+
+}
+
+/*agota vou estilizar a imagem no centro do banner e deixa ela redonda -comando pai-#banner-info img*/
+#banner-info img {
+    height: 180px;/*height ajustei o tamanho da altura da imagem com 120px  */
+    border-radius: 10%;/*comando para deixa a imagem redonda */
+    background-color:  rgb(30, 30, 128) ;/*colocar azul em volta da imagem */
+    margin-top: 30px;/*paraafastar a imagem do titulo espasamento na parte de cima */
+    margin-bottom: 30px;/*afastar imagem do texto*/
+    border-top: 5px solid  rgb(30, 30, 128);
+    border-left: 5px solid  rgb(30, 30, 128);
+    border-bottom: 5px solid  rgb(30, 30, 128);
+    border-right: 5px solid  rgb(30, 30, 128);
+
+}
+#banner-info img:hover{
+    -moz-transform:scale(1.1);
+    -webkit-transform: scaleX(1.1);
+    transform: scale(1.1);
+    overflow:visible;
+ 
+}
+/*agora vou estilizar o testo abaixo da imagem (p)*/
+#banner-info p {
+    background-color: rgb(30, 30, 128);
+    font-size: bold;/*comando para deixar o (p) texto em negrito*/
+    width: 200px; /*vai jogar o texto para direita */
+    margin-right: auto;/*comando para centralizar conteudo de dentro do banner e da DIV -banner-info p*/
+    margin-left: auto; /*comando para centralizar conteudo dentro da div - banner=-info p*/
+    padding: 15px;/*vai abrir um retangulo azul de 15px parecido com um botão */
+}
+/*about-section vamos estilizar */
+#about-section {
+    text-align: center;/*centralizar todos os textos da tag section*/
+    background-color: rgb(30, 30, 128);/*fundo da tela vai ficar azul*/
+    color: whitesmoke;/*todas as letras vão ficar branca*/
+    padding-top: 50px;/*colocou um espasamento em 50px entre o final da tag BANNER  ate inicio da tag ou texto section*/
+    height: 550px;/*altura da caixa azul tag section*/
+    
+}
+
+    /*agora vou ajustar o texto dentro da section */
+#about-section h2{
+    margin-bottom: 20px;
+}
+    /*vou ajustar testo*/
+#about-section p {
+    max-width: 650px;/*maximo de espaço para o texto */
+    /*agora vou centralizar ele com os dois comandos */
+    margin-right: auto;
+    margin-left: auto;
+    line-height: 20px;/*esse comando aumenta a altura da linha para uma vizualização melhor*/
+}
+
+    /*vamos ajustar os skills com os comando flex box*/
+#skills-section {
+    margin-top: -100px;/*esse comando de -100 é para da uma caixa entra em cima da outra caixa*/
+    background-color: whitesmoke; /*fundo da caixa section  vai ser brnaco */
+    width: 80%;/*largura da caixa section vai ser 80% da tela */
+    /*agora vou centralizar ele com os dois comandos */
+    margin-right: auto;
+    margin-left: auto;
+    border: 1.5px solid #ccc;/*coloquei uma borda em volta da caixa section */
+    border-radius: 10px;/*comando para dar uma aredondada nos cantos da caixa sections*/
+
+}
+
+    /*agora vou ajustar os elementos que estão dentro da caixa section imagem  e textos*/
+#skills-section .container {
+    display: flex; /*comando para qua da opção para ajustar os itens */
+    flex-direction: row;/*para ficar em linha (não um em baixo do outro)*/
+    justify-content: center;/*para ter os conteudos alinhados ao centro */
+}
+
+.skills-container {
+    flex:1 1 1; /*comando para todos itens terem o mesmo tamanho */
+    text-align: center;/*para alinhar os textos*/
+    padding: 60px 25px ;
+}
+
+.central {/*colocar uma borda entre os 3 intens*/
+    border-left: 1.5px solid #ccc;
+    border-right: 1.5px solid #ccc;
+}
+/*ajustar o titulo h3*/
+.skills-container h3 {
+    color: rgb(30, 30, 128); /*cor para titulo*/
+    font-size: 20px;/*tamanho da fonte*/
+}
+/*ajustar imagem  height tamanho */
+.skills-container img {
+    height: 60px;/*altura de 60px*/
+    padding: 15px;/*um comando padding para as bordas nao ficarem perto da imagem  */
+    margin-bottom: 25px;/*comando para afastar a imagem das outras cores */
+
+    /*esse comando é para fazer um efeito 3d em uma imagem */
+    border-top: 1.5px solid rgb(30, 30, 128);
+    border-left: 1.5px solid rgb(30, 30, 128);
+    border-bottom: 5px solid rgb(30, 30, 128);
+    border-right: 5px solid rgb(30, 30, 128);
+    border-radius: 10px;
+}
+.skills-container img:hover{
+      -moz-transform:scale(1.1);
+   -webkit-transform: scaleX(1.1);
+   transform: scale(1.1);
+   overflow:visible;
+
+}
+.skills-container .subtitle{
+    font-weight: bold;/*faz um negrito*/
+    color:rgb(30, 30, 128) ;
+    margin-top: 50px ;/*para dar espasamento superior*/
+    margin-bottom: 15px;/*para separa as letras ter uma leitura melhor */
+}
+/*agora vou ajustar o p da caixa skills*/
+.skills-container p {
+    line-height: 25px ;/*altura da linha em 25px*/
+}
+
+/*meu certificado e trabalhos*/
+#jobs-section {
+    text-align:center;/*centralizar o conteudo dentro de jobs*/
+    margin-bottom: 30px;
+
+}
+
+/*vou ajustar o titulo*/
+#jobs-section h2 {
+    color:rgb(30, 30, 128) ;/*cor no titulo*/
+    margin-bottom: 30px;/*margem para dar espasa,emto no titulo*/
+}
+
+#jobs-section p {
+    margin-bottom: 50px;/*espasamento no texto p */
+
+}
+/*agora ajusta o a links das imagens */ 
+#jobs-section a {
+    font-weight: bold;
+    color: red ;
+}
+
+/*agora vou ajustar as imagens que estão em lista com display flex */
+.jobs-container {
+    display: flex;/*para dar opçoes de ajuste em caixas */
+    flex-direction: row;/*deixar as caixas alinhadas uma do lado da outra */
+    justify-content: space-around;/*comando para da um espaço entre uma caixa e a outra caixa ou imagem*/
+    max-width: 1200px;/* comando max-width: é largura maxima da caixa jubs container vai ser de 1200px */
+    margin-right: auto;/*comando para centralizar tudo*/
+    margin-left: auto;/*comando para centralizar tudo */
+    margin-bottom: 50px;/*para dar um espasamento entre as imagens */
+
+}
+
+/*agora vamos ajustar as imagens e colocar elas no site(com a class=.jobs-box)*/
+.job-box{
+    flex: 1 1 200px;/*comando de largura minima de cada imagem 200pxpara não distorcer imagem */
+    margin-left: 25px;/*comando para dar espaçamento para imagem */
+    margin-right:25px;/*comando para dar espaçamento para imagem */
+    height: 300px;/* ajusta a altura de cada imagem */
+    background-size:cover;/*por que vamos ter background em cada umas da imagens */
+    border-right: 5px solid rgb(30, 30, 128);/*comando para colocar um efeito de borda em volta das caixas ou imagem*/
+    border-bottom: 5px solid rgb(30, 30, 128);/*comando para colocar um efeito de borda em volta das caixas ou imagem*/
+    border-left: 1px solid rgb(30, 30, 128);
+    border-top: 1px solid rgb(30, 30, 128);
+    border-radius: 10px;/*comando para dar um raio nos cantos da imagem*/
+}
+
+/*agora muito importante inserir as imagem no fundo da caixa que  configurei */
+.proj1{
+    background-image: url(./img/proj1.jpg);
+}
+/*vou copiar e colar e alterar os numeros */
+.proj2{
+    background-image: url(./img/proj2.jpg);
+}
+.proj3{
+    background-image: url(./img/proj3.jpg);
+}
+.proj4{
+    background-image: url(./img/proj4.jpg);
+}
+.proj5{
+    background-image: url(./img/proj5.jpg);
+}
+.proj6{
+    background-image: url(./img/proj6.jpg);
+}
+
+/*VAMOS FAZER O CSS DO RODA PÉ*/
+/*FOOTER*/
+footer {
+    padding:50px 0;/*por que coloquuei padding->para dar um espaço em cima e embaixo nas laterais não precisa por isso é zero (0)*/
+    background-color: rgb(30, 30, 128);/*comando cor de fundo azull*/
+    color: whitesmoke;/*comando dos texto branco*/
+    text-align:center;/*para centralizar os texto*/
+}
+
+footer img {
+    height: 50px;/*tamanho da imagem do footer 50px*/
+    margin:30px 0;/*comando para dar espaçamento na parte de cima e de baixo da imagem */
+}
+/*ajustar os paragrafos com espaços de 25px*/
+footer p {
+    margin-top: 25px;
+}
+
+/*agora vou ajustar o formulario */
+footer form {
+    /*agora vou determina a largura da caixa do formulario */
+    width: 400px;
+    margin-right: auto;/*comando para centralizar tudo*/
+    margin-left: auto;/*comando para centralizar tudo */
+}
+/*ajustar o botão e as caixa de inserir os dados */
+footer input, footer textarea {
+    border: none; /*comando para tirar as bordas da caixa*/
+    padding: 15px;/*comando para dar espaço entre os texto de dentro do local de preeenchimento*/
+    box-sizing: border-box;/*comando para as caixa de colocar dados respeitar os 400px  */
+    margin-bottom: 20px; /*altura de cada caixinha de inserir os dados*/
+    width: 100%;/*comando de colocar largura de 100% dos 400px que colocamos de largura no formulario*/
+    display: block;/*comando para ajustar as caixinhas de inserir os dados*/
+
+}
+/*destacar quem criou a pagina no caso eu */
+footer .detail{/*coloquei a classe detail no meu nome*/
+    font-weight: bold;/*comando de destacar texto */
+}
+
